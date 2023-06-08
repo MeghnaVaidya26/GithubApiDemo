@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/home"
+    android:id="@+id/main_nav">
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.githubapidemo.view.ui.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/fragment_home">
+
+
+        <action
+            android:id="@+id/user_bio_fragment"
+            app:destination="@id/user"
+            >
+            <argument
+                android:name="username"
+                app:argType="string" />
+
+        </action>
+
+    </fragment>
+    <fragment
+        android:id="@+id/followers"
+        android:name="com.example.githubapidemo.view.ui.UserFollowingFragment"
+        android:label="followers_fragment"
+        tools:layout="@layout/fragment_user_followers">
+
+        <action
+            android:id="@+id/user_profile"
+            app:destination="@id/userprofile" />
+
+    </fragment>
+    <dialog
+        android:id="@+id/user"
+        android:name="com.example.githubapidemo.view.ui.UserBottomSheetFragment"
+        android:label="user_fragment"
+        tools:layout="@layout/fragment_user_bottom_sheet">
+        <action
+            android:id="@+id/user_followers_from_bottom_fragment"
+            app:destination="@id/followers"
+          >
+            <argument
+                android:name="username"
+                app:argType="string" />
+
+        </action>
+
+    </dialog>
+
+    <dialog
+        android:id="@+id/userprofile"
+        android:name="com.example.githubapidemo.view.ui.UserProfileFragment"
+        android:label="userprofile_fragment"
+        tools:layout="@layout/fragment_user_profile">
+    </dialog>
+</navigation>

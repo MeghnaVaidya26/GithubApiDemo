@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="@dimen/_30sdp"
+    tools:context=".view.ui.UserProfileFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_gravity="center"
+        app:civ_border_color="@color/colorAccent"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:layout_marginTop="@dimen/_12sdp"
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/sfprodisplaybold"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_13ssp"
+        tools:text="Meghnajii" />
+
+    <TextView
+        android:id="@+id/tv_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_10ssp"
+        tools:text="Meghna Dave" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:gravity="center"
+        android:fontFamily="@font/sfprodisplaythin"
+        android:maxLines="2"
+        android:layout_gravity="center"
+        android:textColor="@color/offWhite"
+        android:textSize="@dimen/_10ssp"
+        tools:text="Senior full-stack web-platform chief principal engineering architect for strategic technical opensource operations." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_11sdp"
+            android:layout_height="@dimen/_11sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_followers" />
+
+        <TextView
+            android:id="@+id/tv_followers_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/sfprodisplaybold"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_10ssp"
+            tools:text="217" />
+
+        <TextView
+            android:id="@+id/tv_followers_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:fontFamily="@font/sfprodisplaythin"
+            android:textColor="@color/offWhite"
+            android:textSize="@dimen/_10ssp"
+            android:text="Followers" />
+
+        <TextView
+            android:id="@+id/tv_following_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:fontFamily="@font/sfprodisplaybold"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_10ssp"
+            tools:text="217" />
+
+        <TextView
+            android:id="@+id/tv_following_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:fontFamily="@font/sfprodisplaythin"
+            android:textColor="@color/offWhite"
+            android:textSize="@dimen/_10ssp"
+            android:text="Following" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_6sdp"
+
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_11sdp"
+            android:layout_height="@dimen/_11sdp"
+            android:layout_gravity="center"
+            app:tint="@color/offWhite"
+            android:src="@drawable/ic_architecture" />
+
+        <TextView
+            android:id="@+id/tv_company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/sfprodisplayregular"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_10ssp"
+            tools:text="Fulltext" />
+
+       </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_6sdp"
+
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_11sdp"
+            android:layout_height="@dimen/_11sdp"
+            android:layout_gravity="center"
+            app:tint="@color/offWhite"
+            android:src="@drawable/ic_email" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/sfprodisplayregular"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_10ssp"
+            tools:text="hbhjb@gmail.com" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_11sdp"
+            android:layout_height="@dimen/_11sdp"
+            android:layout_gravity="center"
+            app:tint="@color/offWhite"
+            android:src="@drawable/ic_link" />
+
+        <TextView
+            android:id="@+id/tv_blog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/sfprodisplayregular"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_10ssp"
+            tools:text="njknjknjknjnj" />
+
+    </LinearLayout>
+
+</LinearLayout>

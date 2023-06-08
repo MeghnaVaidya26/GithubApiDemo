@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="EditTextTheme">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/sfprodisplaylight</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@drawable/bg_edittext_theme</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:padding">@dimen/_12sdp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

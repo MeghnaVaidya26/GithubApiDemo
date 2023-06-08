@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="@dimen/_16sdp"
+    android:layout_marginEnd="@dimen/_16sdp"
+    android:padding="16dp"
+    android:layout_marginBottom="@dimen/_16sdp"
+    android:background="@drawable/bg_user_card"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_gravity="center"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorAccent"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sfprodisplaybold"
+        tools:text="Meghnajii"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_13ssp" />
+
+    <TextView
+        android:id="@+id/tv_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sfprodisplayregular"
+        tools:text="Meghna Dave"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_10ssp" />
+
+    <TextView
+        android:layout_marginTop="@dimen/_2sdp"
+        android:maxLines="2"
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sfprodisplaythin"
+        tools:text="Senior full-stack web-platform chief principal engineering architect for strategic technical opensource operations."
+        android:textColor="@color/offWhite"
+        android:textSize="@dimen/_10ssp" />
+
+    <TextView
+        android:layout_marginTop="@dimen/_2sdp"
+        android:id="@+id/tv_followers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sfprodisplayregular"
+        tools:text="20 followers 3 following"
+        android:textColor="@color/offWhite"
+        android:textSize="@dimen/_10ssp" />
+</LinearLayout>
+</LinearLayout>

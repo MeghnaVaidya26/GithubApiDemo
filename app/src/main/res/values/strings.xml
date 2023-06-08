@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GithubApiDemo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_on_message_tag">Search user by username...</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="home">Home</string>
+
+</resources>
